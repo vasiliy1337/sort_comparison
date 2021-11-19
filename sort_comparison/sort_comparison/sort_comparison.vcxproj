@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GenerateRandomVector.cpp" />
+    <ClCompile Include="HeapSort_ambroladze.cpp" />
     <ClCompile Include="sort_comparison.cpp" />
     <ClCompile Include="StdSort.cpp" />
   </ItemGroup>

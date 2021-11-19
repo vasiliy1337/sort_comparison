@@ -18,13 +18,13 @@
     <ClCompile Include="sort_comparison.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SortingData.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="StdSort.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="GenerateRandomVector.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapSort_ambroladze.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
