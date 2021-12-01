@@ -17,15 +17,21 @@ vector<Data<int>> GenerateIntData()
         { "random integer", GenerateInt(10, -500, 1000) },
         { "random integer", GenerateInt(100, -500, 1000) },
         { "random integer", GenerateInt(1000, -500, 1000) },
+        { "random integer", GenerateInt(10000, -500, 1000) },
+        { "random integer", GenerateInt(100000, -500, 1000) },
+        { "random integer", GenerateInt(1000000, -500, 1000) },
     };
 }
 vector<Data<double>> GenerateDoubleData()
 {
     return {
-    { "sorted double", {1.0, 2.0, 3.0, 4.0} },
-    { "unsorted double", {4.0, 3.0, 2.0, 1.0} },
-    { "just doubles", GenerateDouble(10, -500, 1000) },
-    { "just doubles", GenerateDouble(100, -500, 1000) },
-    { "just doubles", GenerateDouble(1000, -500, 1000) },
+        { "sorted double", {1.0, 2.0, 3.0, 4.0} },
+        { "unsorted double", {4.0, 3.0, 2.0, 1.0} },
+        { "just doubles", GenerateDouble(10, -500, 1000) },
+        { "just doubles", GenerateDouble(100, -500, 1000) },
+        { "just doubles", GenerateDouble(1000, -500, 1000) },
+        { "just doubles", GenerateDouble(10000, -500, 1000) },
+        { "just doubles", GenerateDouble(100000, -500, 1000) },
+        { "just doubles", GenerateDouble(1000000, -500, 1000) },
     };
 }

@@ -32,12 +32,6 @@
     <ClInclude Include="SortingData.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="StdSort.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="SortingAlgorithms.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>

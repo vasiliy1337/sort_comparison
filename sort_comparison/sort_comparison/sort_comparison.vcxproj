@@ -147,10 +147,8 @@
   <ItemGroup>
     <ClInclude Include="GenerateRandomVector.h" />
     <ClInclude Include="GenerateSortingData.h" />
-    <ClInclude Include="Header.h" />
     <ClInclude Include="SortingAlgorithms.h" />
     <ClInclude Include="SortingData.h" />
-    <ClInclude Include="StdSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
