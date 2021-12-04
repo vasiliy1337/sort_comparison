@@ -33,6 +33,7 @@ int main()
         auto& data = d.data;
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_ambroladze);
+        RUN(quick_sort_bazanyuk);
         
         
         cout << endl << "*****************************************************" << endl << endl;
@@ -46,6 +47,7 @@ int main()
         auto& data = d.data;
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_double_ambroladze);
+        RUN(quick_sort_bazanyuk_double);
         
 
         cout << endl << "*****************************************************" << endl << endl;
