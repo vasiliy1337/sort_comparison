@@ -33,6 +33,7 @@ int main()
         auto& data = d.data;
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_ambroladze);
+        RUN(SmoothSort_Mukhtarov);
         
         
         cout << endl << "*****************************************************" << endl << endl;
@@ -46,6 +47,7 @@ int main()
         auto& data = d.data;
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_double_ambroladze);
+        RUN(SmoothSort_Mukhtarov_double);
         
 
         cout << endl << "*****************************************************" << endl << endl;
