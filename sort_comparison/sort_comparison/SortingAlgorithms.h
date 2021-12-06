@@ -7,9 +7,10 @@ template <typename T>
 using SortingAlgorithm = vector<T>(*)(vector<T>);
 
 vector<int> HeapSort_ambroladze(vector<int>);
-
-vector<int> ChoicesSort_dvoryankin(vector<int> data);
-
 vector<double> HeapSort_double_ambroladze(vector<double>);
 
+vector<int> ChoicesSort_dvoryankin(vector<int> data);
 vector<double> ChoicesSort_dvoryankin_double(vector<double> data);
+
+std::vector<int> quick_sort_bazanyuk(std::vector<int> data);
+std::vector<double> quick_sort_bazanyuk_double(std::vector<double> data);
