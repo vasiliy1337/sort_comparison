@@ -15,5 +15,8 @@ vector<double> ChoicesSort_dvoryankin_double(vector<double> data);
 vector<int> SmoothSort_Mukhtarov(vector<int> data);
 vector<double> SmoothSort_Mukhtarov_double(vector<double> data);
 
+vector<int> merge_sort_yurovskaya_int(vector<int> data);
+vector<double> merge_sort_yurovskaya_double(vector<double> data);
+
 std::vector<int> quick_sort_bazanyuk(std::vector<int> data);
 std::vector<double> quick_sort_bazanyuk_double(std::vector<double> data);
