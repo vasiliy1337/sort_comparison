@@ -141,13 +141,13 @@
   <ItemGroup>
     <ClCompile Include="GenerateRandomVector.cpp" />
     <ClCompile Include="HeapSort_ambroladze.cpp" />
+    <ClCompile Include="mergesort.cpp" />
     <ClCompile Include="sort_comparison.cpp" />
     <ClCompile Include="StdSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GenerateRandomVector.h" />
     <ClInclude Include="GenerateSortingData.h" />
-    <ClInclude Include="Header.h" />
     <ClInclude Include="SortingAlgorithms.h" />
     <ClInclude Include="SortingData.h" />
     <ClInclude Include="StdSort.h" />

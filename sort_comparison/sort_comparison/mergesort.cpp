@@ -3,7 +3,7 @@
 using namespace std;
 
 template <typename T>
-void merge_sort(vector <T>& data, size_t start, size_t end)
+void merge_sort(vector <T>& data, vector<T>& b, size_t start, size_t end)
 {
 	if ((end - start) < 2)
 		return;
@@ -13,9 +13,10 @@ void merge_sort(vector <T>& data, size_t start, size_t end)
 			swap(data[start], data[start + 1]);
 		return;
 	}
-	merge_sort(data, start, start + (end - start) / 2);
-	merge_sort(data, start + (end - start) / 2, end);
-	vector<int> b;
+	merge_sort(data, b, start, start + (end - start) / 2);
+	merge_sort(data, b, start + (end - start) / 2, end);
+
+
 	size_t start_b1 = start;
 	size_t end_e1 = start + (end - start) / 2;
 	size_t start_b2 = end_e1;
@@ -40,13 +41,13 @@ void merge_sort(vector <T>& data, size_t start, size_t end)
 vector<int> merge_sort_yurovskaya_int(vector<int> data)
 {
 	vector <int> b(data.size());
-	merge_sort(data, 0, data.size() - 1);
+	merge_sort(data, b, 0, data.size() - 1);
 	return data;
 }
 
 vector<double> merge_sort_yurovskaya_double(vector<double> data)
 {
 	vector <double> b(data.size());
-	merge_sort(data, 0, data.size() - 1);
+	merge_sort(data, b, 0, data.size() - 1);
 	return data;
 }

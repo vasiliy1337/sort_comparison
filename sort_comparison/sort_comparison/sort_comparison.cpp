@@ -34,7 +34,7 @@ int main()
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_ambroladze);
         RUN(StdSort);
-        
+        RUN(merge_sort_yurovskaya_int);
         
         cout << endl << "*****************************************************" << endl << endl;
     }
@@ -48,6 +48,7 @@ int main()
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_double_ambroladze);
         RUN(StdSort_double);
+        RUN(merge_sort_yurovskaya_double);
         
 
         cout << endl << "*****************************************************" << endl << endl;
