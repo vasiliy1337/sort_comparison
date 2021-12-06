@@ -7,7 +7,6 @@
 #include "GenerateSortingData.h"
 #include "SortingAlgorithms.h"
  
-
 using namespace std;
 
 #define RUN(x) {Run(#x, x, data);}
@@ -33,8 +32,10 @@ int main()
         auto& data = d.data;
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_ambroladze);
-        RUN(StdSort);
         RUN(merge_sort_yurovskaya_int);
+        RUN(SmoothSort_Mukhtarov);
+        RUN(ChoicesSort_dvoryankin);
+        RUN(quick_sort_bazanyuk);
         
         cout << endl << "*****************************************************" << endl << endl;
     }
@@ -47,9 +48,11 @@ int main()
         auto& data = d.data;
         cout << d.description << ",  array size " << data.size() << endl << endl;
         RUN(HeapSort_double_ambroladze);
-        RUN(StdSort_double);
         RUN(merge_sort_yurovskaya_double);
-        
+        RUN(SmoothSort_Mukhtarov_double);
+        RUN(ChoicesSort_dvoryankin_double);
+        RUN(quick_sort_bazanyuk_double);
+
 
         cout << endl << "*****************************************************" << endl << endl;
     }

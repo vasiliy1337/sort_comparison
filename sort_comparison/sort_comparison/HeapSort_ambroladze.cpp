@@ -3,44 +3,33 @@
 using namespace std;
 
 template <typename T>
-void max_heapify(vector<T>& data, int i, int size_)
+void heapify(vector<T>& data, int n, int i)
 {
-    int largest, l = (2 * i) + 1, r = l + 1;
-
-    if (l < size_ && data[l] > data[i])
+    int largest = i;
+    int l = 2 * i + 1; 
+    int r = 2 * i + 2; 
+    if (l < n && data[l] > data[largest])
         largest = l;
-    else
-        largest = i;
-
-    if (r < size_ && data[r] > data[largest])
+    if (r < n && data[r] > data[largest])
         largest = r;
-
-    if (largest != i)
-    {
+    if (largest != i) {
         swap(data[i], data[largest]);
-        max_heapify(data, largest, size_);
+        heapify(data, n, largest);
     }
-}
-
-template <typename T>
-void build_max_heap(vector<T>& data)
-{
-    for (int i = (data.size() / 2); i >= 0; i--)
-        max_heapify(data, i, data.size());
 }
 
 template <typename T>
 void HeapSort(vector<T>& data)
 {
-    build_max_heap(data);
-    int size = data.size();
-    for (int i = data.size() - 1; i > 0; i--)
-    {
+    int n = data.size();
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(data, n, i);
+    for (int i = n - 1; i > 0; i--) {
         swap(data[0], data[i]);
-        size--;
-        max_heapify(data, 0, size);
+        heapify(data, i, 0);
     }
 }
+
 
 vector<int> HeapSort_ambroladze(vector<int> data) {
     HeapSort(data);

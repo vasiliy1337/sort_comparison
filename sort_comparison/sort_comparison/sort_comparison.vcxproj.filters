@@ -18,9 +18,6 @@
     <ClCompile Include="sort_comparison.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="StdSort.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="GenerateRandomVector.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -30,12 +27,18 @@
     <ClCompile Include="mergesort.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="smoothsort_Mukhtarov.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="sort_selection.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="quick_sort_bazanyuk.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SortingData.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="StdSort.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="SortingAlgorithms.h">

@@ -142,15 +142,16 @@
     <ClCompile Include="GenerateRandomVector.cpp" />
     <ClCompile Include="HeapSort_ambroladze.cpp" />
     <ClCompile Include="mergesort.cpp" />
+    <ClCompile Include="smoothsort_Mukhtarov.cpp" />
+    <ClCompile Include="quick_sort_bazanyuk.cpp" />
     <ClCompile Include="sort_comparison.cpp" />
-    <ClCompile Include="StdSort.cpp" />
+    <ClCompile Include="sort_selection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GenerateRandomVector.h" />
     <ClInclude Include="GenerateSortingData.h" />
     <ClInclude Include="SortingAlgorithms.h" />
     <ClInclude Include="SortingData.h" />
-    <ClInclude Include="StdSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
