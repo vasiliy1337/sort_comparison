@@ -41,13 +41,13 @@ void merge_sort(vector <T>& data, vector<T>& b, size_t start, size_t end)
 vector<int> merge_sort_yurovskaya_int(vector<int> data)
 {
 	vector <int> b(data.size());
-	merge_sort(data, b, 0, data.size() - 1);
+	merge_sort(data, b, 0, data.size());
 	return data;
 }
 
 vector<double> merge_sort_yurovskaya_double(vector<double> data)
 {
 	vector <double> b(data.size());
-	merge_sort(data, b, 0, data.size() - 1);
+	merge_sort(data, b, 0, data.size());
 	return data;
 }
