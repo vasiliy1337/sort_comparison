@@ -6,6 +6,7 @@
 #include <iomanip>
 #include "GenerateSortingData.h"
 #include "SortingAlgorithms.h"
+#include <fstream>
  
 using namespace std;
 
@@ -20,10 +21,15 @@ void Run(string MethodName, SortingAlgorithm<T> a, vector<T> data)
     auto time = chrono::duration_cast<chrono::microseconds>(stop - start).count();
 
     cout << setw(30) << MethodName << setw(20) << (is_sorted(res.begin(), res.end()) ? to_string(time) + "\t mcs" : "failed") << endl;
+    ofstream outfile;
+    outfile.open( "./result/" + MethodName + ".txt", std::ios_base::app);
+    outfile << to_string(time) << endl;
+    outfile.close();
 }
 
 int main()
 {
+    
     cout << endl << "***********************Integer***********************" << endl << endl;
     srand(time(0));
     auto intDataSets = GenerateIntData();
@@ -34,26 +40,25 @@ int main()
         RUN(HeapSort_ambroladze);
         RUN(merge_sort_yurovskaya_int);
         RUN(SmoothSort_Mukhtarov);
-        RUN(ChoicesSort_dvoryankin);
         RUN(quick_sort_bazanyuk);
+        RUN(ChoicesSort_dvoryankin);
         
         cout << endl << "*****************************************************" << endl << endl;
     }
 
-    cout << endl << "************************Double***********************" << endl << endl;
-    srand(time(0));
-    auto doubleDataSets = GenerateDoubleData();
-    for (auto& d : doubleDataSets)
-    {
-        auto& data = d.data;
-        cout << d.description << ",  array size " << data.size() << endl << endl;
-        RUN(HeapSort_double_ambroladze);
-        RUN(merge_sort_yurovskaya_double);
-        RUN(SmoothSort_Mukhtarov_double);
-        RUN(ChoicesSort_dvoryankin_double);
-        RUN(quick_sort_bazanyuk_double);
+    //cout << endl << "************************Double***********************" << endl << endl;
+    //srand(time(0));
+    //auto doubleDataSets = GenerateDoubleData();
+    //for (auto& d : doubleDataSets)
+    //{
+    //    auto& data = d.data;
+    //    cout << d.description << ",  array size " << data.size() << endl << endl;
+    //    RUN(HeapSort_double_ambroladze);
+    //    RUN(merge_sort_yurovskaya_double);
+    //    RUN(SmoothSort_Mukhtarov_double);
+    //    RUN(quick_sort_bazanyuk_double);
+    //    RUN(ChoicesSort_dvoryankin_double);
 
-
-        cout << endl << "*****************************************************" << endl << endl;
-    }
+    //    cout << endl << "*****************************************************" << endl << endl;
+    //}
 }
